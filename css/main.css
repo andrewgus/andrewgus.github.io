@@ -106,7 +106,7 @@ body {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #F9FAF7;
+  background-color: #FCFCFA;
 }
 .bodyContainer {
   max-width: 1024px;

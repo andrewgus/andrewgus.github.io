@@ -245,7 +245,8 @@ body {
 }
 
 footer {
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     display: block;
     border-top: 1px solid #E4F0F0;
 }

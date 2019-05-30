@@ -22,16 +22,6 @@ hr {
     padding: 0;
 }
 
-/* Remove the gap between audio, canvas, iframes */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
 
 /* Remove default fieldset styles. */
 
@@ -113,10 +103,32 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-left: 1rem;
 }
+.header h1 {
+    flex: 0 1 75%;
+}
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 1 25%;
+    padding-left: 1rem;
+    align-items: baseline;
+}
+.email {
+    width: 1.95rem;
+    margin-top: .5rem;
+    padding-right: .5rem;
+}
+.LI img {
+    width: 50%;
+}
+
+
 
 .bioContainer {
   display: flex;
@@ -232,13 +244,37 @@ body {
   margin-bottom: 1rem;
 }
 
+footer {
+    width: 1024px;
+    display: block;
+    border-top: 1px solid #E4F0F0;
+}
+
+footer p {
+    margin-right: 2rem;
+    float: right;
+
+    font-size: .85rem;
+    font-style: italic;
+}
+
 
 /* responsive styles */
 @media only screen and (min-width: 31.25rem) {
-  .quickInfo {
-    flex-flow: row;
-    padding: 1rem;
-  }
+    .header {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+    .header h1 {
+        margin-left: 1.6rem;
+    }
+    .email {
+        padding: 0 1rem 0 1.5rem;
+}
+    .quickInfo {
+        flex-flow: row;
+        padding: 1rem;
+    }
 }
 
 
@@ -250,10 +286,6 @@ body {
 
   .header {
     justify-content: flex-start;
-  }
-
-  .header h1 {
-    margin-left: 1.6rem;
   }
 
   .quickInfo {

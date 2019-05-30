@@ -172,12 +172,14 @@ body {
   border-bottom: none;
 }
 
+.resume li:before {
+    margin: .1rem 0 0 -1.2rem
+}
 
 .resume li:before, .skills li:before {
   content: "\21B3";
   color: #CF9192;
   position: absolute;
-  margin: .1rem 0 0 -1.2rem;
 }
 
 .employer {

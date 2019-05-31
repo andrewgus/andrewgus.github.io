@@ -55,14 +55,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    font-size: 14pt;
+    -webkit-text-size-adjust: 100%; /* 2 */
+
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.5rem;
 }
 
 h1 {
+    font-weight: 100;
   font-size: 2rem;
 }
 h2 {
@@ -76,7 +83,6 @@ h4 {
 }
 h5 {
   font-size: 1.2rem;
-  font-weight: 300;
 }
 h6 {
   font-size: 1.2rem;
@@ -85,18 +91,30 @@ h6 {
 
 p {
   color: #444444;
-  font-family: 'Lato', sans-serif;
+  font-family: 'soleil', Calibri, Optima, sans-serif;
   font-size: 1rem;  
   line-height: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
+  font-weight: 300;
+  margin: 1rem 0 1.5rem 0;
 }
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i, em {
+    font-style: italic;
+}
+
 body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   background-color: #FCFCFA;
+    margin: 0
+
 }
 .bodyContainer {
   max-width: 1024px;
@@ -120,14 +138,13 @@ body {
     align-items: baseline;
 }
 .email {
-    width: 1.95rem;
+    width: 1.96rem;
     margin-top: .5rem;
     padding-right: .5rem;
 }
 .LI img {
     width: 50%;
 }
-
 
 
 .bioContainer {
@@ -246,18 +263,19 @@ body {
 
 footer {
     width: 100%;
-    max-width: 1024px;
     display: block;
     border-top: 1px solid #E4F0F0;
+    max-width: 1024px;
 }
 
 footer p {
     margin-right: 2rem;
     float: right;
-
     font-size: .85rem;
     font-style: italic;
 }
+
+
 
 
 /* responsive styles */

@@ -17,14 +17,6 @@ html {
 /* Sections
    ========================================================================== */
 
-/**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-
-}
 
 /**
  * Render the `main` element consistently in IE.
@@ -81,14 +73,8 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
-b,
-strong {
-  font-weight: 700;
-}q
+
 
 
 /**

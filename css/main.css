@@ -69,25 +69,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+
+  font-size: 2.2rem;
     font-weight: 100;
-  font-size: 2rem;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.65rem;
+  font-weight: 100;
 }
 h3 {
-  font-size: 1.6rem
+  font-size: 1.1rem
 }
-h4 {
-  font-size: 1.4rem;
-}
-h5 {
-  font-size: 1.2rem;
-}
-h6 {
-  font-size: 1.2rem;
-  font-style: italic
-}
+
 
 p {
   color: #444444;
@@ -110,7 +103,7 @@ i, em {
 body {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #FCFCFA;
     margin: 0
@@ -123,29 +116,20 @@ body {
 .header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
     margin-left: 1rem;
 }
+
 .header h1 {
-    flex: 0 1 75%;
-}
-.contact {
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 0 1 25%;
-    padding-left: 1rem;
-    align-items: baseline;
-}
-.email {
-    width: 1.96rem;
-    margin-top: .5rem;
-    padding-right: .5rem;
-}
-.LI img {
-    width: 50%;
+    margin-left: 2rem;
+
 }
 
+.contact {
+    width: 2rem;
+    margin: 0 1rem 0 1.5rem;
+}
 
 .bioContainer {
   display: flex;
@@ -164,7 +148,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 5px solid #E4F0F0;
-  padding: 1rem 1rem 0 1rem;
 }
 
 .headshotPic {
@@ -229,7 +212,7 @@ body {
   padding-left: .5rem;
 }
 
-.fscj, .skills {
+.skills {
   padding-left: 1.35rem;
 }
 
@@ -252,14 +235,48 @@ body {
   margin: 0 0 0 -1.2rem;
 }
 
+.skills >li p {
+    margin-bottom: 0;
+}
+
 .skills>li:last-child {
   border-bottom: none;
 }
 
 .skills p {
   line-height: 1.27rem;
-  margin-bottom: 1rem;
+  margin: .75rem 0 .75rem 0;
 }
+
+.tools-examples {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.sample p {
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: #E4F0F0;
+    border: 1px solid #FFFEF2;
+    box-shadow: 2px 1px #FFFEF2;
+    margin: 0 1.5rem 1rem 1.5rem
+}
+.sample p:hover {
+    background-color: #FFFEF2;
+    border: 1px solid #E4F0F0;
+    box-shadow: 2px 1px #E4F0F0;
+}
+.sample p:active {
+    border: 1px solid #CF9192;
+    box-shadow: 2px 1px #CF9192;
+}
+
+.sample a {
+    text-decoration: none;
+}
+
 
 footer {
     width: 100%;
@@ -280,16 +297,12 @@ footer p {
 
 /* responsive styles */
 @media only screen and (min-width: 31.25rem) {
+
     .header {
-        justify-content: flex-start;
         margin-left: 0;
     }
-    .header h1 {
-        margin-left: 1.6rem;
-    }
-    .email {
-        padding: 0 1rem 0 1.5rem;
-}
+
+
     .quickInfo {
         flex-flow: row;
         padding: 1rem;
@@ -298,13 +311,12 @@ footer p {
 
 
 @media only screen and (min-width: 46.88rem) {
+    .header {
+        justify-content: flex-start;
+    }
   .bioContainer {
     flex-flow: row;
     align-items: flex-start;
-  }
-
-  .header {
-    justify-content: flex-start;
   }
 
   .quickInfo {
@@ -323,6 +335,15 @@ footer p {
     max-width: 65%;
     padding-right: 0;
   }
+}
+
+@media only screen and (min-width: 71.88rem) {
+    .bioContainer {
+        margin: 0;
+    }
+    .header h1 {
+        margin-left: 0;
+    }
 }
 
 

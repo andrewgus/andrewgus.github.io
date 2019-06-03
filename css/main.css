@@ -240,7 +240,7 @@ body {
 }
 
 .skills li:before {
-  margin: 0 0 0 -1.2rem;
+  margin-left: -1.2rem;
 }
 
 .skills>li:last-child {

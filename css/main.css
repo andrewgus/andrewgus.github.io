@@ -186,6 +186,7 @@ body {
   content: "\21B3";
   color: #CF9192;
   position: absolute;
+    margin-top: -.1rem;
 }
 .proExp section:before {
     margin-left: -1.2rem;

@@ -270,21 +270,21 @@ body {
     -moz-box-shadow: 2px 1px #CF9192;
     box-shadow: 2px 1px #CF9192;
     margin: 0 1.5rem 1rem 1.5rem;
-    -webkit-transition: 0.3s cubic-bezier(.65,.05,.36,1);;
-    -moz-transition: 0.3s cubic-bezier(.65,.05,.36,1);;
-    transition: 0.3s cubic-bezier(.65,.05,.36,1);;
+    -webkit-transition: .3s cubic-bezier(.9,.03,.69,.22);
+    -moz-transition: .3s cubic-bezier(.9,.03,.69,.22);
+    transition: .3s cubic-bezier(.9,.03,.69,.22)
 }
 .sample p:hover {
     background-color: #E4F0F0;
     border: 1px solid #CF9192;
-    -webkit-box-shadow: -2px 1px #CF9192;
-    -moz-box-shadow: -2px 1px #CF9192;
-    box-shadow: -2px 1px #CF9192;
+    -webkit-box-shadow: 1.25px 0 #CF9192;
+    -moz-box-shadow: 1.25px 0 #CF9192;
+    box-shadow: 1.25px 0 #CF9192;
 }
 .sample p:active {
-    -webkit-box-shadow: -1px 1px #CF9192;
-    -moz-box-shadow: -1px 1px #CF9192;
-    box-shadow: -1px 1px #CF9192;
+    -webkit-box-shadow: 1.25px 0 #CF9192;
+    -moz-box-shadow: 1.25px 0 #CF9192;
+    box-shadow: 1.25px 0 #CF9192;
 }
 
 .sample a {

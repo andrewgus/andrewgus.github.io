@@ -174,12 +174,12 @@ body {
 	border-bottom: none;
 }
 
-.proExp section:before,
-.skills li:before {
+.proExp section::before,
+.skills li::before,
+.edu li::before {
 	content: "\21B3";
 	color: #cf9192;
 	position: absolute;
-	margin-top: -0.1rem;
 }
 .proExp section:before {
 	margin-left: -1.2rem;
@@ -204,7 +204,8 @@ body {
 .skills {
 	padding-left: 1.35rem;
 }
-.skills li {
+.skills li,
+.edu li {
 	list-style-type: none;
 	position: relative;
 }
@@ -231,7 +232,8 @@ body {
 	margin-top: 0;
 }
 
-.skills li:before {
+.skills li::before,
+.edu li::before {
 	margin-left: -1.2rem;
 }
 
@@ -256,7 +258,8 @@ body {
 .tools-examples > .sample {
 	flex: 0.75;
 }
-ul.skills > li.tools-examples::before {
+ul.skills > li.tools-examples::before,
+.edu li {
 	margin-top: 0.7rem;
 }
 ul.skills > li.tools-examples {

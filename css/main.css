@@ -250,6 +250,18 @@ body {
 	justify-content: space-between;
 	align-content: baseline;
 }
+.tools-examples > p {
+	flex: 1;
+}
+.tools-examples > .sample {
+	flex: 0.75;
+}
+ul.skills > li.tools-examples::before {
+	margin-top: 0.7rem;
+}
+ul.skills > li.tools-examples {
+	border-bottom: none;
+}
 
 .sample p {
 	padding: 1rem;
@@ -265,6 +277,7 @@ body {
 	-webkit-transition: 0.3s cubic-bezier(0.9, 0.03, 0.69, 0.22);
 	-moz-transition: 0.3s cubic-bezier(0.9, 0.03, 0.69, 0.22);
 	transition: 0.3s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+	text-align: center;
 }
 .sample p:hover {
 	background-color: #e4f0f0;

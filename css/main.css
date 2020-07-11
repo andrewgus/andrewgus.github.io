@@ -578,7 +578,8 @@ footer p {
 .design-case__content p:first-of-type::first-letter {
 	font-size: 10rem;
 	float: left;
-	margin: -0.8rem 0.4rem -1rem 0;
+	margin: -0.5rem 1rem 0 0;
+	line-height: 1;
 	font-weight: 700;
 }
 .design-case__images {

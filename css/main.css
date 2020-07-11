@@ -527,6 +527,19 @@ footer p {
 .osu {
 	background: linear-gradient(0.4turn, #ffb4b4 3%, #dedefa 14%, white 40%);
 }
+@media only screen and (min-width: 70em) {
+	.osu {
+		background: linear-gradient(
+			0.4turn,
+			#ffb4b4 3%,
+			#dedefa 12%,
+			white 35%,
+			white 65%,
+			#dedefa 88%,
+			#ffb4b4 97%
+		);
+	}
+}
 
 .design-case__container {
 	display: flex;

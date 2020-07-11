@@ -51,7 +51,7 @@ textarea {
    ========================================================================== */
 
 html {
-	font-size: 14pt;
+	font-size: 62.5%;
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -64,29 +64,29 @@ h6 {
 	color: #444444;
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
-	line-height: 1.5rem;
+	line-height: 1.5;
 }
 
 h1 {
-	font-size: 2.2rem;
+	font-size: 3.6rem;
 	font-weight: 100;
-	line-height: 2rem;
+	line-height: 1.75;
 }
 h2 {
-	font-size: 1.65rem;
+	font-size: 3.2rem;
 	font-weight: 100;
 }
 h3 {
-	font-size: 1.1rem;
+	font-size: 2.2rem;
 }
 
 p {
 	color: #444444;
 	font-family: "soleil", Calibri, Optima, sans-serif;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 1.6rem;
+	line-height: 1.6;
 	font-weight: 300;
-	margin: 1rem 0 1.5rem 0;
+	margin: 1rem 0 2.5rem 0;
 }
 
 b,
@@ -180,17 +180,18 @@ body {
 	content: "\21B3";
 	color: #cf9192;
 	position: absolute;
+	font-size: 1.9rem;
 }
 .proExp section:before {
-	margin-left: -1.2rem;
+	margin-left: -2.1rem;
 }
 
 .proExp section {
-	padding-left: 1.2rem;
+	padding-left: 2.1rem;
 }
 
 .description {
-	padding: 0.5rem;
+	padding: 1.5rem;
 	background-color: #fffef2;
 	border: 1px solid #e4f0f0;
 	font-style: italic;
@@ -234,7 +235,7 @@ body {
 
 .skills li::before,
 .edu li::before {
-	margin-left: -1.2rem;
+	margin-left: -2.1rem;
 }
 
 .skills > li:last-child {
@@ -260,7 +261,7 @@ body {
 }
 ul.skills > li.tools-examples::before,
 .edu li {
-	margin-top: 0.7rem;
+	margin-top: 0.2rem;
 }
 ul.skills > li.tools-examples {
 	border-bottom: none;
@@ -520,4 +521,75 @@ footer p {
 	h3 {
 		page-break-after: avoid;
 	}
+}
+
+/* design case styles */
+.osu {
+	background: linear-gradient(0.4turn, #ffb4b4 3%, #dedefa 14%, white 40%);
+}
+
+.design-case__container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 3rem;
+}
+.design-case__titles {
+	margin: 3rem auto 6rem;
+	width: 100%;
+}
+
+.design-case__titles h1 {
+	line-height: 0.5;
+	font-weight: 400;
+	margin-left: 0;
+}
+.design-case__titles h2 {
+	line-height: 1.2;
+	margin-left: 0;
+}
+@media only screen and (min-width: 60em) {
+	.design-case__titles h1,
+	.design-case__titles h2 {
+		margin-left: 10rem;
+	}
+}
+.design-case__content p {
+	font-size: 2rem;
+	font-weight: 100;
+	max-width: 72rem;
+	margin: 0 auto 2.4rem;
+}
+
+.design-case__content p:first-of-type::first-letter {
+	font-size: 10rem;
+	float: left;
+	margin: 0.5rem 1.2rem 0.25rem 0;
+	font-weight: 700;
+}
+.design-case__images {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 120rem;
+}
+.design-case__figure {
+	flex: 1;
+	max-width: 40rem;
+	min-width: 30rem;
+}
+@media only screen and (min-width: 60rem) {
+	.design-case__figure {
+		max-width: 100%;
+	}
+}
+.design-case__figure img {
+	max-width: 100%;
+}
+.design-case__figure figcaption {
+	font-size: 1.6rem;
+	font-style: italic;
+	margin: 1rem auto 2.5rem;
+	padding: 0 2rem;
 }

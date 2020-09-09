@@ -528,34 +528,50 @@ footer p {
 	justify-content: center;
 	margin: 0 auto;
 	max-width: 1024px;
+	align-items: flex-start;
+	padding: 0 4rem;
+}
+.lx-examples--header {
+	width: 100%;
+}
+.lx-examples--nav {
+	border-radius: 1rem;
+	background: #fcfcfa;
+	box-shadow: inset 0.6rem 0.6rem 0.4rem #b8b8b6, inset -0.6rem -0.6rem 0.4rem #fff;
+	max-width: 1024px;
+	width: 100%;
 }
 .lx-examples--navList {
 	display: flex;
 	flex-flow: row wrap;
 	padding: 0;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .lx-examples--navList-item {
 	margin: 0 2rem;
 	list-style-type: none;
+}
+.lx-examples--navList-item p {
+	margin: 2rem 1rem;
 }
 .lx-examples--navList-item a {
 	text-decoration: none;
 	font-size: 2rem;
 	color: #000000;
 	padding: 1rem;
-	transition: 0.3s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+	transition: 0.3s cubic-bezier(0.33, 0.18, 0.69, 0.5);
 	border-radius: 0.6rem;
 }
 .lx-examples--navList-item a:hover,
 .lx-examples--navList-item a:focus {
 	font-weight: 600;
 	text-decoration: underline;
-	box-shadow: 0.6rem 0.6rem 1.2rem #8c8c8c;
-	background-color: #f6cbca;
+	box-shadow: 0.5rem 0.5rem 0.9rem #b8b8b7b8, 0.5rem -0.5rem 0.9rem #fff;
+	background-color: #fae8e7;
 }
 .lx-examples--main {
 	min-width: 75%;
+	margin-left: 4rem;
 }
 .iframe-container {
 	overflow: hidden;

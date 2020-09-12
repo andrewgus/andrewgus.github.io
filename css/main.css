@@ -525,19 +525,19 @@ footer p {
 
 /* design case styles */
 .lx-examples {
-	justify-content: center;
 	margin: 0 auto;
 	max-width: 1024px;
-	align-items: flex-start;
 	padding: 0 1rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
 }
 .lx-examples--header {
-	width: 100%;
-	position: sticky;
-	top: 0;
 	z-index: 1000;
+	grid-area: 1 / 1 / 2/ 7;
+}
+.bg-add {
 	background-color: #fcfcfa;
-	margin-top: 1rem;
 }
 .nav-btn {
 	height: 4.8rem;
@@ -548,6 +548,10 @@ footer p {
 	padding: 0;
 	background-color: #fcfcfa;
 	transition: 0.3s linear;
+	margin: 1rem 0.5rem 0 0;
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 .nav-btn:hover,
 .nav-btn:focus {
@@ -584,20 +588,30 @@ footer p {
 		display: none;
 	}
 }
-#nav.revealTOC {
-	display: block;
-}
+
 .lx-examples--nav {
 	display: none;
 	border-radius: 1rem;
 	background: #fcfcfa;
 	box-shadow: inset 0.6rem 0.6rem 0.4rem #b8b8b6, inset -0.6rem -0.6rem 0.4rem #fff;
 	max-width: 1024px;
-	width: 100%;
+}
+#nav.revealTOC {
+	display: block;
+	height: 98vh;
+	position: fixed;
+	top: 0.5rem;
+	width: 97%;
 }
 @media only screen and (min-width: 35em) {
 	.lx-examples--nav {
 		display: block;
+	}
+	#nav.revealTOC {
+		position: relative;
+		height: auto;
+		width: 100%;
+		top: 0;
 	}
 }
 .lx-examples--navList {
@@ -637,8 +651,7 @@ footer p {
 	background-color: #fae8e7;
 }
 .lx-examples--main {
-	min-width: 75%;
-	margin-left: 4rem;
+	grid-area: 3 / 2/ -1 / 6;
 }
 .iframe-container {
 	overflow: hidden;

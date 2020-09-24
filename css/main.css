@@ -85,13 +85,13 @@ p {
 	font-family: "Signika",  sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.6;
-	font-weight: 400;
+	font-weight: 100;
 	margin: 1rem 0 2.5rem 0;
 }
 
 b,
 strong {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 i,

@@ -653,6 +653,9 @@ footer p {
 .lx-examples--main {
 	grid-area: 3 / 2/ -1 / 6;
 }
+lx-examples--main h1 {
+	line-height: 1.5;
+}
 .iframe-container {
 	overflow: hidden;
 	/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */

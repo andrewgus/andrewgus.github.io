@@ -651,7 +651,8 @@ footer p {
 	background-color: #fae8e7;
 }
 .lx-examples--main {
-	grid-area: 3 / 2/ -1 / 6;
+	grid-area: 3 / 1/ -1 / 6;
+	margin-left: 4rem;
 }
 .lx-examples--main h1 {
 	line-height: 1.5;

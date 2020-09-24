@@ -64,7 +64,7 @@ h4,
 h5,
 h6 {
 	color: #000000;
-	font-family: "Signika", Arial, sans-serif;
+	font-family: Tahoma,Verdana, Arial ,sans-serif;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -84,7 +84,7 @@ h3 {
 
 p {
 	color: #000000;
-	font-family: "Signika",  sans-serif;
+	font-family: Tahoma,Verdana, Arial ,sans-serif;
 	font-size: 1.727rem;
 	line-height: 1.7;
 	font-weight: 300;
@@ -303,6 +303,7 @@ ul.skills > li.tools-examples {
 .sample a {
 	text-decoration: none;
 }
+
 
 footer {
 	width: 100%;
@@ -654,6 +655,7 @@ footer p {
 	box-shadow: 0.5rem 0.5rem 0.9rem #b8b8b7b8, 0.5rem -0.5rem 0.9rem #fff;
 	background-color: #fae8e7;
 }
+
 .lx-examples--main {
 	grid-area: 3 / 1/ -1 / 7;
 	margin-left: 4rem;
@@ -661,10 +663,10 @@ footer p {
 }
 .lx-examples--main h1 {
 	line-height: 1.5;
+	max-width: 70rem;
 }
 .iframe-container {
 	overflow: hidden;
-	/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
 	padding-top: 56.25%;
 	position: relative;
 }
@@ -739,4 +741,10 @@ footer p {
 	font-size: 1.9rem;
 	margin-left: -2.5rem;
 	margin-top: 0.15rem;
+}
+.lx-tools {
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 0.2rem;
+	margin-bottom: 6rem;
 }

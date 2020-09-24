@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
+
 /* Customize the background color to match your design. */
 
 ::-moz-selection {
@@ -69,12 +71,12 @@ h6 {
 
 h1 {
 	font-size: 3.6rem;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 1.75;
 }
 h2 {
 	font-size: 3.2rem;
-	font-weight: 100;
+	font-weight: 300;
 }
 h3 {
 	font-size: 2.2rem;
@@ -84,8 +86,8 @@ p {
 	color: #000000;
 	font-family: "Signika",  sans-serif;
 	font-size: 1.727rem;
-	line-height: 1.6;
-	font-weight: 100;
+	line-height: 1.7;
+	font-weight: 300;
 	margin: 1rem 0 2.5rem 0;
 }
 
@@ -97,6 +99,7 @@ strong {
 i,
 em {
 	font-style: italic;
+	font-weight: 400;
 }
 
 body {
@@ -735,4 +738,5 @@ footer p {
 	position: absolute;
 	font-size: 1.9rem;
 	margin-left: -2.5rem;
+	margin-top: 0.15rem;
 }

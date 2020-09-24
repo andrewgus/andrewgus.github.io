@@ -62,7 +62,7 @@ h4,
 h5,
 h6 {
 	color: #000000;
-	font-family: "Raleway", sans-serif;
+	font-family: "Signika", Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -82,10 +82,10 @@ h3 {
 
 p {
 	color: #000000;
-	font-family: "soleil", Calibri, Optima, sans-serif;
+	font-family: "Signika",  sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.6;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 1rem 0 2.5rem 0;
 }
 

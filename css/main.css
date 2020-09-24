@@ -651,8 +651,9 @@ footer p {
 	background-color: #fae8e7;
 }
 .lx-examples--main {
-	grid-area: 3 / 1/ -1 / 6;
+	grid-area: 3 / 1/ -1 / 7;
 	margin-left: 4rem;
+
 }
 .lx-examples--main h1 {
 	line-height: 1.5;
@@ -671,4 +672,42 @@ footer p {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+.intro {
+	padding-right: 2rem;
+}
+.prototype {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 0;
+}
+.prototype h1 {
+	width: 100%;
+}
+@media only screen and (min-width: 35em) {
+	.prototype {
+		margin-top: 2.4rem;
+	}
+}
+.wicked-problem {
+	padding: 1rem;
+	background-color: #dcf7cd;
+	border: 1px solid #444444;
+	flex: 1;
+	min-width: 30rem;
+}
+.wicked-problem h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1rem 0;
+	width: 100%;
+}
+.wicked-problem p:last-child {
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+.prototype-outline {
+	flex: 2;
+	margin-left: 4rem;
+	min-width: 30rem;
 }

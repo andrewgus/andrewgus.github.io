@@ -683,22 +683,19 @@ footer p {
 	padding-right: 2rem;
 }
 .prototype {
-	display: flex;
-	flex-flow: column wrap;
+	display: grid;
 	margin-top: 0;
 	padding-right: 4rem;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 4rem;
+	grid-template-rows: max-content repeat(6, 22rem);
 }
 .prototype h1 {
-	width: 100%;
+	grid-column: 1 / span 2;
 }
 @media only screen and (min-width: 35em) {
 	.prototype {
 		margin-top: 2.4rem;
-	}
-}
-@media only screen and (min-width: 50em) {
-	.prototype {
-		flex-flow: row wrap;
 	}
 }
 @media only screen and (min-width: 65em) {
@@ -711,12 +708,6 @@ footer p {
 	padding: 1rem;
 	background-color: #dcf7cd;
 	border: 1px solid #444444;
-	flex: 1;
-	min-width: 25rem;
-	max-width: 38rem;
-	max-height: 21rem;
-	margin-right: 4rem;
-	margin-bottom: 4rem;
 }
 .wicked-problem h2 {
 	font-size: 2rem;
@@ -729,7 +720,6 @@ footer p {
 	margin-bottom: 1rem;
 }
 .prototype-outline {
-	flex: 2;
 	margin-right: 1rem;
 }
 .prototype-outline li {

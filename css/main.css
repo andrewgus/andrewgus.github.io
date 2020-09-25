@@ -658,7 +658,7 @@ footer p {
 
 .lx-examples--main {
 	grid-area: 3 / 1/ -1 / 7;
-	margin-left: 4rem;
+	margin-left: 1rem;
 
 }
 .lx-examples--main h1 {
@@ -714,7 +714,7 @@ footer p {
 	flex: 1;
 	min-width: 25rem;
 	max-width: 38rem;
-	max-height: 20rem;
+	max-height: 21rem;
 	margin-right: 4rem;
 	margin-bottom: 4rem;
 }

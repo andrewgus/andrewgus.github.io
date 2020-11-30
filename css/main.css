@@ -325,7 +325,7 @@ footer p {
 }
 
 /* responsive styles */
-@media only screen and (min-width: 33.25rem) {
+@media only screen and (min-width: 35.25rem) {
 	.header {
 		margin-left: 0;
 	}

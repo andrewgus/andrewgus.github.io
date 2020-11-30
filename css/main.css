@@ -331,7 +331,7 @@ footer p {
 	}
 
 	.quickInfo {
-		flex-flow: row;
+		flex-flow: row nowrap;
 		padding: 1rem;
 	}
 }

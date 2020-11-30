@@ -184,6 +184,7 @@ body {
 	color: #cf9192;
 	position: absolute;
 	font-size: 1.9rem;
+	margin-top: .5rem;
 }
 .proExp section:before {
 	margin-left: -2.1rem;
@@ -252,10 +253,14 @@ body {
 }
 
 .tools-examples {
+	margin-bottom: 2rem;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-content: baseline;
+}
+.tools-examples:last-child {
+  flex-flow: column nowrap;
 }
 .tools-examples > p {
 	flex: 1;

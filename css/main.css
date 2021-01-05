@@ -709,6 +709,7 @@ footer p {
 }
 .designCase h1 {
 	grid-column: 1 / span 2;
+	max-width: 42rem;
 }
 @media only screen and (min-width: 35em) {
 	.designCase {

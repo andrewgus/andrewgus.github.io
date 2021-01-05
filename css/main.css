@@ -564,8 +564,8 @@ footer p {
 	background-color: #fcfcfa;
 }
 .nav-btn {
-	height: 4.8rem;
-	width: 4.8rem;
+	height: 3.8rem;
+	width: 3.8rem;
 	border-radius: 50%;
 	float: right;
 	border: 1px solid black;
@@ -576,6 +576,7 @@ footer p {
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 99999;
 }
 .nav-btn:hover,
 .nav-btn:focus {
@@ -591,7 +592,7 @@ footer p {
 .nav-btn--bars::after {
 	display: inline-block;
 	height: 0.2rem;
-	width: 3rem;
+	width: 2.8rem;
 	background-color: black;
 }
 .nav-btn--bars::before,
@@ -607,11 +608,6 @@ footer p {
 .nav-btn--bars::after {
 	bottom: 0.75rem;
 }
-@media only screen and (min-width: 35em) {
-	.nav-btn {
-		display: none;
-	}
-}
 
 .lx-examples--nav {
 	display: none;
@@ -619,6 +615,7 @@ footer p {
 	background: #fcfcfa;
 	box-shadow: inset 0.6rem 0.6rem 0.4rem #b8b8b6, inset -0.6rem -0.6rem 0.4rem #fff;
 	max-width: 1024px;
+	z-index: 999;
 }
 #nav.revealTOC {
 	display: block;
@@ -628,9 +625,6 @@ footer p {
 	width: 97%;
 }
 @media only screen and (min-width: 35em) {
-	.lx-examples--nav {
-		display: block;
-	}
 	#nav.revealTOC {
 		position: relative;
 		height: auto;
@@ -661,7 +655,7 @@ footer p {
 }
 .lx-examples--navList-item a {
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1.125rem;
 	color: #000000;
 	padding: 1rem;
 	border-radius: 0.6rem;

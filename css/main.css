@@ -605,6 +605,9 @@ footer p {
 .nav-btn--bars::after {
 	bottom: -0.65rem;
 }
+.btnVisible {
+	display: block;
+}
 
 .lx-examples--nav {
 	display: none;
@@ -622,7 +625,13 @@ footer p {
 	top: 0.5rem;
 	width: 97%;
 }
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 55em) {
+	.keepVisible {
+		display: block;
+	}
+	.btnVisible {
+		display: none;
+	}
 	#nav.revealTOC {
 		position: relative;
 		height: auto;
@@ -637,7 +646,7 @@ footer p {
 	justify-content: space-around;
 	align-items: center;
 }
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 55em) {
 	.lx-examples--navList {
 		flex-flow: row wrap;
 		justify-content: flex-start;

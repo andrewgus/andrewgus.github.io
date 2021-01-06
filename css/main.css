@@ -125,6 +125,7 @@ body {
 	align-items: center;
 	background-color: #fcfcfa;
 	margin: 0;
+	position: relative;
 }
 .all-content {
 	max-width: 1024px;
@@ -321,6 +322,8 @@ footer {
 	display: block;
 	border-top: 1px solid #e4f0f0;
 	max-width: 1024px;
+	position: absolute;
+	bottom: -3rem;
 }
 
 footer p {
@@ -551,6 +554,7 @@ footer p {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr;
+	position: relative;
 }
 .lx-examples--header {
 	z-index: 1000;
@@ -637,6 +641,11 @@ footer p {
 		height: auto;
 		width: 100%;
 		top: 0;
+	}
+	.headerSticky {
+		position: sticky;
+		top: 0;
+		width: 100%;
 	}
 }
 .lx-examples--navList {

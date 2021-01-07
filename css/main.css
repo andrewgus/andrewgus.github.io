@@ -189,11 +189,11 @@ body {
 	color: #cf9192;
 	position: absolute;
 	font-size: 1.9rem;
-	margin-top: -0.3rem;
+	margin-top: -0.5rem;
 }
 .proExp section:before {
 	margin-left: -2.1rem;
-	margin-top: -0.3rem;
+	margin-top: -0.5rem;
 }
 
 .proExp section {
@@ -274,7 +274,9 @@ body {
 .tools-examples > .sample {
 	flex: 0.75;
 }
-ul.skills > li.tools-examples::before,
+ul.skills > li.tools-examples::before {
+	margin-top: 0;
+}
 .edu li {
 	margin-top: 0.2rem;
 }
@@ -769,7 +771,7 @@ footer p {
 	position: absolute;
 	font-size: 2.8rem;
 	margin-left: -3.2rem;
-	margin-top: -0.9rem;
+	margin-top: -1.2rem;
 	font-weight: 900;
 }
 .lx-tools {

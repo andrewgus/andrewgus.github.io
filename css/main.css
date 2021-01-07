@@ -565,8 +565,8 @@ footer p {
 	background-color: #fcfcfa;
 }
 .nav-btn {
-	height: 3.25rem;
-	width: 3.5rem;
+	height: 2.85rem;
+	width: 2.85rem;
 	border-radius: 50%;
 	float: right;
 	border: 1px solid black;
@@ -585,9 +585,7 @@ footer p {
 	box-shadow: 0.5rem 0.5rem 0.9rem #b8b8b7b8, 0.5rem -0.5rem 0.9rem #fff;
 	background-color: #fae8e7;
 }
-.nav-btn--bars {
-	position: relative;
-}
+
 .nav-btn--bars,
 .nav-btn--bars::before,
 .nav-btn--bars::after {
@@ -595,6 +593,9 @@ footer p {
 	height: 0.2rem;
 	width: 2.2rem;
 	background-color: black;
+	position: absolute;
+	left: 5px;
+	bottom: 21px;
 }
 .nav-btn--bars::before,
 .nav-btn--bars::after {
@@ -604,10 +605,10 @@ footer p {
 	backface-visibility: hidden;
 }
 .nav-btn--bars::before {
-	top: -0.65rem;
+	top: -0.45rem;
 }
 .nav-btn--bars::after {
-	bottom: -0.65rem;
+	bottom: -0.45rem;
 }
 .btnVisible {
 	display: block;

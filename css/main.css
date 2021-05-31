@@ -261,9 +261,14 @@ body {
 .tools-examples {
 	margin-bottom: 2rem;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-content: baseline;
+}
+@media only screen and (max-width: 35em) {
+	.tools-examples {
+		flex-flow: column nowrap;
+	}
 }
 .tools-examples:last-child {
 	flex-flow: column nowrap;
@@ -665,25 +670,27 @@ footer p {
 	}
 }
 .lx-examples--navList-item {
-	margin: 0 2rem;
+	margin: 1rem 2rem;
 	list-style-type: none;
 }
+.lx-examples--navList-item:hover,
+.lx-examples--navList-item:focus {
+	font-weight: 600;
+	text-decoration: underline;
+	box-shadow: 0.5rem 0.5rem 0.9rem #b8b8b7b8, 0.5rem -0.5rem 0.9rem #fff;
+	background-color: #fae8e7;
+	border-radius: 8px;
+}
 .lx-examples--navList-item p {
-	margin: 2rem 1rem;
+	margin: 1rem 1rem;
+	text-align: center;
 }
 .lx-examples--navList-item a {
 	text-decoration: none;
 	font-size: 1.125rem;
 	color: #000000;
-	padding: 1rem;
+	padding: 0 1rem;
 	border-radius: 0.6rem;
-}
-.lx-examples--navList-item a:hover,
-.lx-examples--navList-item a:focus {
-	font-weight: 600;
-	text-decoration: underline;
-	box-shadow: 0.5rem 0.5rem 0.9rem #b8b8b7b8, 0.5rem -0.5rem 0.9rem #fff;
-	background-color: #fae8e7;
 }
 
 .lx-examples--main {

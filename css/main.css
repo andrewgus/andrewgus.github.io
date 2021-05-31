@@ -79,28 +79,31 @@ h4,
 h5,
 h6 {
 	color: #000000;
-	font-family: "Atkinson Hyperlegible", Tahoma, Verdana, Arial, sans-serif;
-	font-weight: 300;
+	font-family: "Atkinson Hyperlegible Bold", Tahoma, Verdana, Arial, sans-serif;
+	font-weight: 900;
 	line-height: 1.5;
+	letter-spacing: 0.2px;
 }
 
 h1 {
 	font-size: 2.1875rem;
-	font-weight: 300;
 	line-height: 1.75;
 }
 h2 {
 	font-size: 1.75rem;
-	font-weight: 300;
 }
 h3 {
 	font-size: 1.375rem;
+}
+.subHeading {
+	font-family: "Atkinson Hyperlegible", Tahoma, Verdana, Arial, sans-serif;
+	font-weight: 300;
 }
 
 p {
 	color: #000000;
 	font-family: "Atkinson Hyperlegible", Tahoma, Verdana, Arial, sans-serif;
-	font-size: 1.0625rem;
+	font-size: 1.25rem;
 	line-height: 1.7;
 	font-weight: 300;
 	margin: 1rem 0 2.5rem 0;
@@ -189,11 +192,11 @@ body {
 	color: #cf9192;
 	position: absolute;
 	font-size: 1.9rem;
-	margin-top: -0.5rem;
+	margin-top: -0.3rem;
 }
 .proExp section:before {
 	margin-left: -2.1rem;
-	margin-top: -0.5rem;
+	margin-top: -0.3rem;
 }
 
 .proExp section {
@@ -280,7 +283,7 @@ body {
 	flex: 0.75;
 }
 ul.skills > li.tools-examples::before {
-	margin-top: 0;
+	margin-top: 0.3rem;
 }
 .edu li {
 	margin-top: 0.2rem;
@@ -554,7 +557,7 @@ footer p {
 /* design case styles */
 .lx-examples {
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1150px;
 	padding: 0 1rem;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -750,7 +753,6 @@ footer p {
 	margin: 1rem 0;
 }
 .wicked-problem p:last-child {
-	font-style: italic;
 	margin-bottom: 1rem;
 }
 .designCase-outline {
@@ -778,7 +780,7 @@ footer p {
 	position: absolute;
 	font-size: 2.8rem;
 	margin-left: -3.2rem;
-	margin-top: -1.2rem;
+	margin-top: -0.8rem;
 	font-weight: 900;
 }
 .lx-tools {
@@ -791,4 +793,15 @@ footer p {
 	width: 100%;
 	border: 1px solid black;
 	margin-top: -1rem;
+}
+.linkOut::after {
+	content: "\21D7";
+}
+.linkOut:hover,
+.linkOut:focus {
+	font-weight: 900;
+}
+img {
+	width: 100%;
+	margin-bottom: 2rem;
 }
